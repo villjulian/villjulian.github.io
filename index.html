@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Julian Vill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Julian, Vill, Mathematik, Algebra, Uni, OvGU, Magdeburg, math">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 0px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b></b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="teaching.html">Teaching</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:300px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Julian Vill</h1>
+      <hr>
+      <p><h4> My name is Julian Vill. I am a Postdoc at <a href="https://www.math.ovgu.de/">OvGU Magdeburg</a> working in the algebra group of <a href="https://thomas-kahle.de/index.html">Thomas Kahle</a>.<br>
+      Before, I did my Phd at Universität Konstanz with <a href="http://www.math.uni-konstanz.de/%7Escheider/">Claus Scheiderer</a> as my advisor.<br>
+      My research is in real algebraic geometry, convexity and algebraic statistics.
+      </h4></p>
+    </div>
+    <!--<div class="w3-third w3-container">
+      <img src="picture_me.png" class="w3-round" alt="me" style="width:100%">  
+    </div>-->
+  </div>
+
+ <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Activities</h1>
+      <hr>
+            <p> <h3>
+        <ul>
+        	<li>12.9.-17.9. <a href="https://realgeoms2022.c.matinf.uj.edu.pl/home">Conference: Real Algebraic Geometry and Singularities, Krakow </a>  </li>
+  		<li>9.8. <a href="https://www.mis.mpg.de/calendar/conferences/2022/lmsd22.html">Leipzig-Magdeburg seminar day</a>  </li>		        
+  		<li>11.-13.7. visit at MPI Leipzig</li>
+	</ul> </h3>
+      </p>
+    </div>
+  </div>
+
+
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
