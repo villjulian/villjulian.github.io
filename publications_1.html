@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Julian Vill Publications</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Julian, Vill, Mathematik, Algebra, Uni, OvGU, Magdeburg, math">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<style>
+a {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-theme-l1" href="index.html">Home</a>
+    <a class="w3-bar-item w3-button w3-theme-l1" href="publications.html">Publications</a>
+    <a class="w3-bar-item w3-button w3-theme-l1" href="teaching.html">Teaching</a>
+  </div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+	<h1 class="w3-text-teal">Publications</h1>
+      <hr>
+      <p> 
+      <h3>
+        <ul class="tilesWrap">
+        <li>
+		<h3>Efficiently deciding if an ideal is toric after a linear coordinate change</h3>
+		<coauthors> joint with Thomas Kahle</coauthors>
+		<p>
+		<a href="">arxiv</a> | <a href="https://github.com/villjulian/villjulian.github.io">Code on github</a>
+		</p>
+		<center><img src="torus.png" alt="a torus" style="width:400px;height:400px;"></center>
+	</li>
+	<li>
+		<h3>Sums of even powers of polynomials</h3>
+		<coauthors>joint with Tomasz Kowalczyk</coauthors>
+		<p>
+		<a href="https://arxiv.org/pdf/2311.07356.pdf">arxiv</a>
+		</p>
+		<center><img src="face_lattice.png" alt="face lattice binary octics" style="width:400px;height:400px;"></center>
+	</li>
+	<li>
+		<h3>Bounds on Hilbert functions with application to convexity</h3>
+		<p>
+		<a href="https://arxiv.org/pdf/2304.02332.pdf">arxiv</a>
+		</p>
+	</li>	
+	<li>
+		<h3>Integrating Spectrahedra</h3>
+		<p>
+		<a href="https://arxiv.org/pdf/2303.05815.pdf">arxiv</a>
+		</p>
+		<center><img src="fb_binary_sextics.png" alt="fiber body of binary sextics" style="width:400px;height:400px;"></center>
+		
+	</li>	
+	<li>
+		<h3>Decomposable Context-Specific Models</h3>
+		<coauthors>joint with Yulia Alexandr and Eliana Duarte</coauthors>
+		<p>
+		SIAM Journal on Applied Algebra and Geometry <b>Vol.8, No.2</b>, 363-393, 2024
+		<a href="https://arxiv.org/pdf/2210.11521.pdf">arxiv</a> | <a href="https://epubs.siam.org/doi/full/10.1137/23M1575111">journal</a>
+		</p>
+		<center><img src="CStree.png" alt="A CStree" style="width:847px;height:311px;"></center>
+	</li>
+	<li>
+		<h3>Gram spectrahedra of ternary quartics</h3>
+		<p>
+		Journal of Symbolic Computation, <b>116</b>, 263-283, 2023
+		<a href="https://arxiv.org/pdf/2112.10533.pdf">arxiv</a> | <a href="https://authors.elsevier.com/sd/article/S0747-7171(22)00101-8">journal</a>
+		</p>
+		<center><img src="fermat_K_4_obvious_representation_t.png" alt="partial Fermat Gram spectrahedron" style="width:500px;height:500px;"></center>
+	</li>
+	<li>
+		<h3>Ideals of spaces of degenerate matrices</h3>
+		<coauthors>joint with Mateusz Michałek and Alexander Taveira Blomenhofer</coauthors>
+		<p>
+		Linear Algebra Appl. <b>648</b>, 56-69, 2022
+		<a href="https://arxiv.org/pdf/2106.00735.pdf">arxiv</a> | <a href="https://www.sciencedirect.com/science/article/abs/pii/S0024379522001677">journal</a>
+		</p>
+	</li>
+	<li>
+		<h3>Dimensions of faces of Gram spectrahedra</h3>
+		<p>
+		PhD thesis, Universität Konstanz
+		<a href="https://kops.uni-konstanz.de/bitstream/handle/123456789/55984/Vill_2-1w8s2jo8j8zwt2.pdf?sequence=3">link</a>
+		</p>
+	</li>
+       </ul>
+	</h3>
+      
+      
+      
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+	
+
+	
+
